@@ -14,7 +14,8 @@
 		181B2D3F1C86C6BB00C12654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181B2D3E1C86C6BB00C12654 /* Assets.xcassets */; };
 		181B2D421C86C6BB00C12654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181B2D401C86C6BB00C12654 /* LaunchScreen.storyboard */; };
 		181B2D4D1C86C6BB00C12654 /* ReactiveCocoaLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B2D4C1C86C6BB00C12654 /* ReactiveCocoaLearnTests.m */; };
-		3491C50AAFF0F3F1E5A02A3A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16373B5E07CF76A256BE37AB /* Pods.framework */; };
+		18653C5A1C882DB1009A6B7B /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18653C591C882DB1009A6B7B /* LoginService.m */; };
+		8A27E66B8A104C0678CD9022 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E63ADC08599955A287FA48 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16373B5E07CF76A256BE37AB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		181B2D2F1C86C6BB00C12654 /* ReactiveCocoaLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoaLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181B2D331C86C6BB00C12654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		181B2D351C86C6BB00C12654 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,7 +42,10 @@
 		181B2D481C86C6BB00C12654 /* ReactiveCocoaLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveCocoaLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181B2D4C1C86C6BB00C12654 /* ReactiveCocoaLearnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaLearnTests.m; sourceTree = "<group>"; };
 		181B2D4E1C86C6BB00C12654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18653C581C882DB1009A6B7B /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		18653C591C882DB1009A6B7B /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
 		620E0D48AF4B16F0DA8A4C4A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D0E63ADC08599955A287FA48 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F502A451AD8DBB821863C12E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3491C50AAFF0F3F1E5A02A3A /* Pods.framework in Frameworks */,
+				8A27E66B8A104C0678CD9022 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +71,7 @@
 		0DCDEFBE1C9EA657FCE7BC7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16373B5E07CF76A256BE37AB /* Pods.framework */,
+				D0E63ADC08599955A287FA48 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,6 +99,8 @@
 		181B2D311C86C6BB00C12654 /* ReactiveCocoaLearn */ = {
 			isa = PBXGroup;
 			children = (
+				18653C581C882DB1009A6B7B /* LoginService.h */,
+				18653C591C882DB1009A6B7B /* LoginService.m */,
 				181B2D351C86C6BB00C12654 /* AppDelegate.h */,
 				181B2D361C86C6BB00C12654 /* AppDelegate.m */,
 				181B2D381C86C6BB00C12654 /* ViewController.h */,
@@ -289,6 +294,7 @@
 				181B2D3A1C86C6BB00C12654 /* ViewController.m in Sources */,
 				181B2D371C86C6BB00C12654 /* AppDelegate.m in Sources */,
 				181B2D341C86C6BB00C12654 /* main.m in Sources */,
+				18653C5A1C882DB1009A6B7B /* LoginService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
